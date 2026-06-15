@@ -225,7 +225,7 @@ This project is open source and available under the MIT License.
 
 - GitHub: [@62jhaanuj-dotcom](https://github.com/62jhaanuj-dotcom)
 - LinkedIn: [anuj-jha-8b41b9262](https://www.linkedin.com/in/anuj-jha-8b41b9262)
-- Email: your.email@example.com
+- Email: jhaanuj7389@gmail.com
 
 ## 🎯 Next Steps
 
