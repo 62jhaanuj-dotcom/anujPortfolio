@@ -89,10 +89,13 @@ const Skills = () => {
             <div className="absolute top-40 left-0 w-96 h-96 bg-purple-500/10 rounded-full mix-blend-screen filter blur-[150px] opacity-50" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full mix-blend-screen filter blur-[150px] opacity-50" />
 
-            <div className="max-w-6xl mx-auto relative z-10"> 
+            <div
+                ref={ref}
+                className="max-w-6xl mx-auto relative z-10"
+            >
                 {/* Section Title */}
                 <motion.div
-                    ref={ref}
+                    
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ duration: 0.6 }}
@@ -109,7 +112,7 @@ const Skills = () => {
 
                 {/* Skills Grid */}
                 <motion.div
-                    ref={ref}
+                    
                     variants={containerVariants}
                     initial="hidden"
                     animate={inView ? 'visible' : 'hidden'}
@@ -159,7 +162,7 @@ const Skills = () => {
 
                 {/* Proficiency Levels Section */}
                 <motion.div
-                    ref={ref}
+                    
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
@@ -170,7 +173,7 @@ const Skills = () => {
 
                     <div className="relative z-10">
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 tracking-tight flex items-center gap-3">
-                            <svg className="w-7 h-7 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            <svg className="w-7 h-7 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                             Proficiency Levels
                         </h3>
 
@@ -195,7 +198,7 @@ const Skills = () => {
                                             {prof.description}
                                         </p>
                                     </div>
-                                    
+
                                     {/* Sleek Progress Bar */}
                                     <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden border border-white/5">
                                         <motion.div
