@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     const handleDownloadResume = () => {
-        window.open('https://drive.google.com/file/d/1uBLTFU5fRegrkhynvmPwC5ZCz6U3c1JE/view?usp=sharing', '_blank');
+        window.open('https://drive.google.com/file/d/14N4-CNz-rezJ5CxbvNOPV50uVlcNirVI/view?usp=drive_link', '_blank');
     };
 
     const techStack = ['React', 'Next.js', 'Node.js', 'MongoDB', 'TypeScript', 'Tailwind CSS'];
